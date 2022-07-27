@@ -10,8 +10,8 @@ public class utility {
 	
 	public static String fetchdatafromexcelsheet() throws EncryptedDocumentException, IOException {
 		FileInputStream file = new FileInputStream("C:\\Users\\Admin\\Desktop\\STOCK MENTAIN REPORT.xlsx");
-		String data =WorkbookFactory.create(file).getSheet("sheet1").getRow(0).getCell(1).getStringCellValue();
-		return data ;
+		String file2 =WorkbookFactory.create(file).getSheet("sheet1").getRow(0).getCell(1).getStringCellValue();
+		return file2 ;
 		
 	}
 
